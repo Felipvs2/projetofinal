@@ -1,26 +1,23 @@
 <?php
-class Conexao{
 
-  static $con = null;
+    class Conexao{
+        static $host = '127.0.0.1';
+        static $user = 'root';
+        static $pass = '';
+        static $database = 'db_catalogo3e2';
+        static $port = '3366';
+        static $con;
 
-  public static function getConnection(){
-  $ip = "127.0.0.1";
-  $port = "3366";
-  $user = "root";
-  $pass = "";
-  $db = "db_catalogo3E2";
-
-  if(!self::$con){
-      //cria uma conexão com o banco de dados no mysql
-      self::$con = new mysqli($ip, $user, $pass, $db, $port);
-  
-      //verifica se houve erros na conexão
-      if(self::$con->connect_error){
-        echo self::$con->connect_error;
-      die(); 
-      }
+        public static function getConnection(){
+            if(!self::$con){
+                self::$con = new mysqli(self::$host, self::$user, self::$pass, self::$database, self::$port);
+                if(self::$con->connect_error){
+                    echo "Ocorreu um erro:" . self::$con->connect_error;
+                    die();
+                }
+            }
+            return self::$con;
+        }
     }
-  return self::$con;
-  }
-}
+
 ?>

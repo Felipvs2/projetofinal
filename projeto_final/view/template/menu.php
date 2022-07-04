@@ -1,4 +1,5 @@
-<!-- Menu de navegação !--->
+<!-- Menu -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">Navbar</a>
