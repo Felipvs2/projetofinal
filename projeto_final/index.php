@@ -1,6 +1,6 @@
 <?php
 
-$base_url = 'http://localhost/Tobias/Back-end/projeto_final/index.php';
+$base_url = 'http://localhost/projeto_final/index.php';
     $controlador_padrao='categoria';
     $controlador=ucfirst($_GET['c']??$controlador_padrao);
     $metodo=$_GET['m']??'index';

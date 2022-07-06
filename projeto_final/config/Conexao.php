@@ -4,8 +4,8 @@
         static $host = '127.0.0.1';
         static $user = 'root';
         static $pass = '';
-        static $database = 'db_catalogo3e2';
-        static $port = '3366';
+        static $database = 'db_projeto_final_3e';
+        static $port = '3306';
         static $con;
 
         public static function getConnection(){
