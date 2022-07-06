@@ -5,7 +5,7 @@
         static $user = 'root';
         static $pass = '';
         static $database = 'db_projeto_final_3e';
-        static $port = '3366';
+        static $port = '3306';
         static $con;
 
         public static function getConnection(){

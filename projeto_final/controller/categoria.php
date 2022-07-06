@@ -7,12 +7,14 @@
 
         function __construct(){
             session_start();
-            if(!isset( $_SESSION['usuario'])){
+            if(!isset($_SESSION['usuario'])){
                 header('Location: ?c=restrito&m=login');
-
             }
             $this->model = new CategoriaModel();
-        }
+            }
+        
+           
+        
 
         function index(){
             $categorias = ($this->model->buscarTodos());
@@ -56,6 +58,7 @@
             }
         }
     }
+    
 
     //codigos para mexer no bd!
     //$model->inserir("Produto de Limpeza");
