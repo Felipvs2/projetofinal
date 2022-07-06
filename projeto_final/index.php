@@ -1,7 +1,7 @@
 <?php
 
-$base_url = 'http://localhost/projeto_final/index.php';
-    $controlador_padrao='categoria';
+$base_url = 'http://localhost/Felipe/projeto_final/index.php';
+    $controlador_padrao='home';
     $controlador=ucfirst($_GET['c']??$controlador_padrao);
     $metodo=$_GET['m']??'index';
     $caminho_controlador="controller/$controlador.php";
