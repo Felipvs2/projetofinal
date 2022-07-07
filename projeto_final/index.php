@@ -1,6 +1,6 @@
 <?php
 
-$base_url = 'http://localhost/projeto_final/index.php';
+$base_url = 'http://projetoconse.infinityfreeapp.com/index.php';
     $controlador_padrao='home';
     $controlador=ucfirst($_GET['c']??$controlador_padrao);
     $metodo=$_GET['m']??'index';
